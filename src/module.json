@@ -1,5 +1,5 @@
 {
-    "id": "externalactor",
+    "id": "external-actor-viewer",
     "title": "External Actor Viewer",
     "description": "Makes you able to see characters from unloaded worlds.",
     "version": "12.0.0",
@@ -30,18 +30,18 @@
     ],
     "scripts": [],
     "esmodules": ["module.js"],
-    "styles": [],
+    "styles": ["styles/external-actor-viewer.css"],
     "compatibility": {
         "minimum": 12,
         "verified": 12,
         "maximum": 12
     },
-    "url": "https://github.com/p4535992/foundryvtt-externalactor",
-    "manifest": "https://github.com/p4535992/foundryvtt-externalactor/releases/download/12.0.0/module.json",
-    "download": "https://github.com/p4535992/foundryvtt-externalactor/releases/download/12.0.0/module.zip",
-    "readme": "https://github.com/p4535992/foundryvtt-externalactor/blob/master/README.md",
-    "changelog": "https://github.com/p4535992/foundryvtt-externalactor/blob/master/CHANGELOG.md",
-    "bugs": "https://github.com/p4535992/foundryvtt-externalactor/issues",
+    "url": "https://github.com/p4535992/foundryvtt-external-actor-viewer",
+    "manifest": "https://github.com/p4535992/foundryvtt-external-actor-viewer/releases/download/12.0.0/module.json",
+    "download": "https://github.com/p4535992/foundryvtt-external-actor-viewer/releases/download/12.0.0/module.zip",
+    "readme": "https://github.com/p4535992/foundryvtt-external-actor-viewer/blob/master/README.md",
+    "changelog": "https://github.com/p4535992/foundryvtt-external-actor-viewer/blob/master/CHANGELOG.md",
+    "bugs": "https://github.com/p4535992/foundryvtt-external-actor-viewer/issues",
     "relationships": {
         "systems": [],
         "requires": [

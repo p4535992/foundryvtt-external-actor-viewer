@@ -1,10 +1,8 @@
 const CONSTANTS = {
-    MODULE_ID: "externalactor",
-    PATH: `modules/externalactor/`,
+    MODULE_ID: "external-actor-viewer",
+    PATH: `modules/external-actor-viewer/`,
     MODULE_TITLE: "External Actor Viewer",
-    FLAGS: {
-
-    },
+    FLAGS: {},
 };
 CONSTANTS.PATH = `modules/${CONSTANTS.MODULE_ID}/`;
 export default CONSTANTS;

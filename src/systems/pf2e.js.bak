@@ -1,0 +1,75 @@
+import API from "../scripts/api";
+import CONSTANTS from "../scripts/constants";
+
+Hooks.on("init", () => {
+    if (game.system.id === "pf2e") {
+        Hooks.on("actorViewerGenerate", () => {
+            const compatMode = game.settings.get(CONSTANTS.MODULE_ID, "compatMode");
+            let actors = {};
+            game.actors.forEach((actor) => {
+                if (!compatMode) {
+                    if (game.user.isGM) {
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "hasStamina",
+                            game.settings.get("pf2e", "staminaVariant") > 0,
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "ignoreCoinBulk",
+                            game.settings.get("pf2e", "ignoreCoinBulk"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "ignoreContainerOverflow",
+                            game.settings.get("pf2e", "ignoreContainerOverflow"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyUntrainedModifier",
+                            game.settings.get("pf2e", "proficiencyUntrainedModifier"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyVariant",
+                            game.settings.get("pf2e", "proficiencyVariant"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyTrainedModifier",
+                            game.settings.get("pf2e", "proficiencyTrainedModifier"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyExpertModifier",
+                            game.settings.get("pf2e", "proficiencyExpertModifier"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyMasterModifier",
+                            game.settings.get("pf2e", "proficiencyMasterModifier"),
+                        );
+                        actor.setFlag(
+                            CONSTANTS.MODULE_ID,
+                            "proficiencyLegendaryModifier",
+                            game.settings.get("pf2e", "proficiencyLegendaryModifier"),
+                        );
+                    }
+                }
+
+                actors[actor.id] = JSON.parse(JSON.stringify(actor.data));
+            });
+
+            API.createActorsFile(actors);
+            API.createWorldsFile();
+
+            game.settings.set(
+                CONSTANTS.MODULE_ID,
+                "systemSite",
+                "https://ardittristan.github.io/VTTExternalActorSites/pf2e/",
+            );
+
+            return false;
+        });
+    }
+});

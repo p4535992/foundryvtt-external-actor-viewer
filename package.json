@@ -1,5 +1,5 @@
 {
-    "name": "externalactor",
+    "name": "external-actor-viewer",
     "title": "External Actor Viewer",
     "description": "Provides additional functionality around Map Pins",
     "version": "1.9.9",

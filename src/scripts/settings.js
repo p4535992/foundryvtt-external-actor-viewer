@@ -9,6 +9,22 @@ export const registerSettings = function () {
         restricted: true,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "systemSite", {
+        scope: "client",
+        type: String,
+        default: "https://ardittristan.github.io/VTTExternalActorSite/",
+        config: false,
+    });
+
+    game.settings.register(CONSTANTS.MODULE_ID, "compatMode", {
+        scope: "world",
+        type: Boolean,
+        default: false,
+        config: true,
+        name: "Enable performance mode.",
+        hint: "If this module causes performance loss on startup. You can disable certain features with this option. Keep in mind that this'll mean that some data doesn't get exported.",
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "debug", {
         name: `${CONSTANTS.MODULE_ID}.settings.debug.name`,
         hint: `${CONSTANTS.MODULE_ID}.settings.debug.hint`,
@@ -20,9 +36,7 @@ export const registerSettings = function () {
 };
 class ResetSettingsDialog extends FormApplication {
     constructor(...args) {
-        //@ts-ignore
         super(...args);
-        //@ts-ignore
         return new Dialog({
             title: game.i18n.localize(`${CONSTANTS.MODULE_ID}.dialogs.resetsettings.title`),
             content:

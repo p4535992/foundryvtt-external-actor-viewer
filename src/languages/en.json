@@ -1,5 +1,5 @@
 {
-    "externalactor": {
+    "external-actor-viewer": {
         "settings.reset.name": "Reset settings to default",
         "settings.reset.label": "Reset Settings To Default",
         "settings.reset.hint": "This will reset all of the settings of back to the active game system's default.",
@@ -10,6 +10,14 @@
         "settings.dialogs.resetsettings.title": "Reset Module Settings",
         "settings.dialogs.resetsettings.content": "Are you sure you want to reset all of the module settings to the current system's defaults? <strong>THIS CANNOT BE UNDONE!</strong>",
         "settings.dialogs.resetsettings.confirm": "Reset Module Settings",
-        "settings.dialogs.resetsettings.cancel": "Cancel"
+        "settings.dialogs.resetsettings.cancel": "Cancel",
+
+        "actorUrl": "Actor URL",
+        "popup": {
+            "goTo": "Go To Application",
+            "copy": "Copy Actor URL",
+            "close": "Close"
+        },
+        "copied": "Copied to clipboard"
     }
 }
