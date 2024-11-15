@@ -1,0 +1,15 @@
+{
+    "externalactor": {
+        "settings.reset.name": "Reset settings to default",
+        "settings.reset.label": "Reset Settings To Default",
+        "settings.reset.hint": "This will reset all of the settings of back to the active game system's default.",
+        "settings.debug.name": "Enable debugging",
+        "settings.debug.label": "Prints debug messages to the console",
+        "settings.debug.hint": " ",
+
+        "settings.dialogs.resetsettings.title": "Reset Module Settings",
+        "settings.dialogs.resetsettings.content": "Are you sure you want to reset all of the module settings to the current system's defaults? <strong>THIS CANNOT BE UNDONE!</strong>",
+        "settings.dialogs.resetsettings.confirm": "Reset Module Settings",
+        "settings.dialogs.resetsettings.cancel": "Cancel"
+    }
+}

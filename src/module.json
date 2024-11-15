@@ -1,0 +1,63 @@
+{
+    "id": "externalactor",
+    "title": "External Actor Viewer",
+    "description": "Makes you able to see characters from unloaded worlds.",
+    "version": "12.0.0",
+    "authors": [
+        {
+            "name": "ardittristan#0001"
+        },
+        {
+            "name": "p4535992",
+            "url": "https://github.com/p4535992",
+            "discord": "",
+            "twitter": "",
+            "patreon": "p4535992",
+            "github": "p4535992",
+            "ko-fi": "",
+            "reddit": "",
+            "email": ""
+        }
+    ],
+    "type": "module",
+    "socket": true,
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ],
+    "scripts": [],
+    "esmodules": ["module.js"],
+    "styles": [],
+    "compatibility": {
+        "minimum": 12,
+        "verified": 12,
+        "maximum": 12
+    },
+    "url": "https://github.com/p4535992/foundryvtt-externalactor",
+    "manifest": "https://github.com/p4535992/foundryvtt-externalactor/releases/download/12.0.0/module.json",
+    "download": "https://github.com/p4535992/foundryvtt-externalactor/releases/download/12.0.0/module.zip",
+    "readme": "https://github.com/p4535992/foundryvtt-externalactor/blob/master/README.md",
+    "changelog": "https://github.com/p4535992/foundryvtt-externalactor/blob/master/CHANGELOG.md",
+    "bugs": "https://github.com/p4535992/foundryvtt-externalactor/issues",
+    "relationships": {
+        "systems": [],
+        "requires": [
+            {
+                "id": "lib-wrapper",
+                "type": "module",
+                "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+                "compatibility": {}
+            },
+            {
+                "id": "socketlib",
+                "type": "module",
+                "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/develop/module.json",
+                "compatibility": {}
+            }
+        ],
+        "conflicts": []
+    }
+}
