@@ -1,0 +1,37 @@
+{
+  "name": "5e-database",
+  "version": "1.0.0",
+  "description": "Database for 5e-srd-api",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.json",
+    "test": "jest -c jest.config.js",
+    "build:ts": "tsc --project scripts",
+    "db:refresh": "npm run build:ts && node scripts/built/dbRefresh.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagelbits/5e-database.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bagelbits/5e-database/issues"
+  },
+  "homepage": "https://github.com/bagelbits/5e-database#readme",
+  "devDependencies": {
+    "@semantic-release/github": "^11.0.1",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-json": "^3.1.0",
+    "glob": "^11.0.0",
+    "jest": "^29.7.0",
+    "redis": "^4.7.0",
+    "semantic-release": "^24.2.0",
+    "typescript": "^5.6.3"
+  }
+}

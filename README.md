@@ -120,9 +120,12 @@ Any issues, bugs, or feature requests are always welcome to be reported directly
 ## License
 
 - [VTTExternalActorViewer](https://github.com/ardittristan/VTTExternalActorViewer) ([MIT](https://github.com/ardittristan/VTTExternalActorViewer/blob/master/LICENSE))
+- [5e-bits](https://github.com/5e-bits/5e-database) ([MIT](https://github.com/5e-bits/5e-database/blob/main/LICENSE.md))
+
 
 This package is under an [MIT](LICENSE) and the [Foundry Virtual Tabletop Limited License Agreement for module development](https://foundryvtt.com/article/license/).
 
 ## Acknowledgements
 
 - Thank you to [ardittristan](https://github.com/ardittristan) for the module [VTTExternalActorViewer](https://github.com/ardittristan/VTTExternalActorViewer) inspiration
+- Thank you to [5e-bits](https://github.com/5e-bits/5e-database) for the project [5e-database](https://github.com/5e-bits/5e-database) inspiration
